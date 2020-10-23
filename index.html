@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <title>BuildYou</title>
+  <style>
+    body {
+      background-color: #3C2AC9;
+      font-family: 'Red Hat Display', sans-serif;
+      /* width:100vw; */
+    }
+
+    .grid-container {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* background-color: #2196F3; */
+      /* margin: 5px; */
+      /* width:100vw; */
+      /* padding: 10px; */
+    }
+
+    .child {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-item {
+      /* padding: 50px; */
+      font-size: 30px;
+      /* width:1fr; */
+      /* text-align: center; */
+    }
+
+    .grid-item2 {
+
+      /* background-color:springgreen; */
+      /* padding: 50px; */
+      font-size: 30px;
+      text-align: center;
+      /* display: flex; */
+      /* justify-content: center; */
+    }
+
+    .grid-item3 {
+      width: calc(50vw - 78px);
+      padding-top: 150px;
+      padding-left: 60px;
+      /* font-size: 30px; */
+      /* background-color: violet; */
+      display: inline-block;
+      /* text-align: center; */
+    }
+
+    .grid-item5 {
+      display: inline-block;
+      text-align: center;
+      width: calc(50vw - 78px);
+      /* background-color: slateblue; */
+      padding-left: 60px;
+      padding-bottom: 50px;
+      /* margin-top: -20px; */
+      /* padding-top: 50px; */
+    }
+
+    .grid-item4 {
+      display: inline-block;
+      width: calc(50vw - 20px);
+      /* width:100%; */
+      padding-top: 50px;
+
+      /* padding-top: 150px; */
+      /* padding-left: 60px; */
+      /* font-size: 30px; */
+      /* background-color:teal; */
+      text-align: center;
+    }
+
+    .grid-item6 {
+      display: inline-block;
+      width: calc(50vw - 60px);
+      /* margin-top: -120px; */
+
+      /* width:100%; */
+      /* padding-top: 10px; */
+
+      /* padding-top: 150px; */
+      /* padding-left: 60px; */
+      /* font-size: 30px; */
+      /* background-color:teal; */
+      /* text-align: center; */
+    }
+
+    .grid-item1 {
+      /* margin-top: 50px; */
+      /* padding: 20px; */
+      font-size: 30px;
+      text-align: center;
+      border-style: solid;
+      /* background-color:tomato; */
+      border-right-color: #2196F355;
+      border-top: none;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .buildlogo {
+      width: 300px;
+    }
+
+    .dsclogo {
+      width: 600px;
+      /* height: 100px; */
+      /* margin: auto auto; */
+      padding-top: 30px;
+    }
+
+    .text {
+      font-size: 15px;
+    }
+
+    .first {
+      /* padding-top:110px; */
+      width: 280px;
+    }
+
+    .footer {
+      /* width: calc(100vw - 60px); */
+      padding-left: 40px;
+      /* margin:10px 70px; */
+      border-style: solid;
+      border-color: pink;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+    }
+
+    .line {
+      text-align: center;
+      padding-top: 140px;
+      /* padding-left: 40px; */
+      /* width:calc(100vw - 150px) */
+      /* border-color: pink; */
+      /* border-style: solid; */
+      /* width:100vw; */
+    }
+
+    .vanish {
+      display: none;
+    }
+
+    .child>div>h2 {
+      color: white;
+    }
+
+    .child>div>h3 {
+      color: white;
+    }
+
+    .child>div>h4 {
+      color: white;
+    }
+
+    .child>div {
+      padding-left: 40px;
+    }
+
+    .finalgrid {
+      display: grid;
+      grid-template-columns: 35px auto;
+    }
+
+    .finalgrid>div {
+      color: white;
+    }
+
+    .icon {
+      width: 25px;
+    }
+    .che{
+      width:500px
+    }
+
+    @media (max-width: 768px) {
+
+      /* .grid-item{
+                width:100%;
+            } */
+      .buildlogo {
+        width: 90px;
+      }
+
+      .che{
+        width:300px;
+      }
+      .dsclogo {
+        width: 200px;
+        padding-top: 15px;
+      }
+
+      .first {
+        padding-top: 10px;
+        width: 200px
+      }
+
+      .footer {
+        /* width: calc(90vw - 5px); */
+        /* margin-left:10px; */
+        padding-left: 5px;
+        /* width: 92vmax; */
+      }
+
+      .line {
+        font-size: 10px;
+        font-weight: 100;
+        padding-top: 80px;
+      }
+
+      .grid-item3 {
+        /* grid-template-columns: 1fr; */
+        /* width: 90vw; */
+        padding-left: 20px;
+        padding-top: 80px;
+        width: calc(90vw - 30px);
+      }
+
+      .grid-item6 {
+        /* grid-template-columns: 1fr; */
+        /* width: 90vw; */
+        padding-left: 20px;
+        padding-top: 80px;
+        width: calc(90vw - 5px);
+      }
+
+      .grid-item4 {
+        padding-top: 0px;
+        width: calc(90vw);
+
+      }
+
+      .grid-item5 {
+        display: none;
+      }
+
+      .vanish {
+        display: block;
+        width: calc(90vw - 0px);
+        /* background-color: slateblue; */
+        text-align: center;
+      }
+
+      .child {
+        grid-template-columns: 1fr;
+      }
+
+      /* .grid-container{
+                grid-template-columns: 1fr;
+            }
+            .grid-item1{
+                display: inline-block;
+            }
+            .grid-item2{
+                display: inline-block;
+            } */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item1">
+      <img src="./Assets/LogoWText.png" alt="logo" class="buildlogo">
+    </div>
+    <div class="grid-item2">
+      <img src="./Assets/dsc1.png" alt="dsc" class="dsclogo">
+    </div>
+  </div>
+  <div class="grid-item3">
+    <h1 style="color:pink;font-size: 35px;">What is it?<hr></h1><br>
+    <h2 class="text" style="color: white;font-size: 22px;font-weight: 400;">DevJams is one of a kind hackathon conducted by DSC VIT
+        every year to encourage tech enthusiasts from across the111
+        country to develop their ideas for the future. The hackathon
+        focuses on providing students and upcoming entrepreneurs
+        with a platform to develop, compete, network and present
+        their ideas to solve real-world problems.
+        <br/>
+        <br/>
+        We have been successfully conducting DevJams (previously
+        known as Devfest) for 5 years now. DevJams’20 will be the
+        sixth edition through which we hope to bring innovative
+        minds from all around the country under one banner. </h2>
+  </div>
+  <div class="grid-item4">
+    <img src="./Assets/what.png" alt="first" class="first" style="width: 400px;">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="grid-item5">
+    <img src="./Assets/where.png" alt="two" class="first" style="width: 400px;">
+  </div>
+  <div class="grid-item6">
+    <h1 style="color:pink;font-size: 35px;font-weight: 400;">Where is it?<hr></h1><br>
+    <h2 class="text" style="color: white; font-size: 22px;font-weight: 400;">This year, with the current pandemic in mind, we have
+        moved the entire event to be on an online platform. We will
+        also see the inclusion of Mentors who will guide every team
+        in implementing their projects, paving the way for a more
+        professional approach to the idea throughout multiple
+        phases of the hackathon. </h2>
+  </div>
+  <div class="vanish">
+    <img src="./Assets/where.png" alt="two" class="first">
+  </div>
+  <div class="grid-item3">
+
+    <h1 style="color:pink;font-size: 35px;font-weight: 400;">Who is doing it?<hr></h1><br>
+    <h2 class="text" style="color: white;font-size: 22px;font-weight: 400;">One of the most sought – after technical chapters in VIT
+        Vellore is Developer Student Clubs VIT, a non-profit
+        community that aims to inspire young and intelligent minds
+        in the field of technology and provides a platform to learn,
+        develop and innovate. </h2>
+  </div>
+  <div class="grid-item4">
+    <img src="./Assets/dsc.png" alt="two" class="first">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="grid-item5">
+    <img src="./Assets/sponsor.png" alt="two" class="first" style="width:200px;;margin-bottom: -50px;">
+  </div>
+  <div class="grid-item6">
+    <h1 style="color:pink;font-size: 35px;font-weight: 400;">Why sponsor us?<hr></h1><br>
+    <h2 class="text" style="color: white;font-size: 22px;font-weight: 400;">We, at DSC VIT, are keen on bringing out talent among the
+        next generation of developers by training them to enter the
+        industry with ease and expertise. We would love it if you
+        could support us by sponsoring our hackathon so that we
+        can deliver quality experiences to our budding developers
+        free of cost. We are open to collaborate and come up with
+        flexible sponsorship plans to best suit your needs. </h2>
+  </div>
+  <div class="vanish">
+    <img src="./Assets/sponsor.png" alt="two" class="first">
+  </div>
+  <br>
+  <div class="grid-item3">
+
+    <h1 style="color:pink;font-size: 35px;font-weight: 400;">Event flow<hr></h1><br>
+    <h2 class="text" style="color: white;font-size: 22px;font-weight: 400;">
+        Mentor allocation:<br/>
+        The first phase will see teams getting assigned their own
+mentors who will guide them throughout their projects as
+well as monitor and track their progress. Our experienced
+mentors will ensure that the quality of projects in the
+hackathon stay high and guarantee the technical growth of
+every team, thus making the event a great opportunity for
+new developers. 
+<br><br>
+The hackathon: <br>
+Participants will be encouraged to solve real-life problems by
+implementing the ideas given in the tracks, under the
+constant mentorship of our dedicated mentors <br>
+Unlike the usual hackathon, DevJams 2020 will span over a
+period of one month - giving participants enough time to put
+out top tier projects which are sure to benefit society while 
+</h2>
+  </div>
+  <div class="grid-item4">
+    <img src="./Assets/Timeline.png" alt="two" class="che" style="margin-bottom: 100px;">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="grid-item5">
+    <img src="./Assets/Budget.png" alt="two" class="first">
+  </div>
+  <div class="grid-item6">
+    <h1 style="color:pink;font-size: 35px;font-weight: 400;">Budget for the event<hr></h1><br>
+    <h2 class="text" style="color: white;font-size: 22px;font-weight: 400;">The event would require approximately a total of 75K to
+        conduct. We at Developer Student Club, VIT would
+        appreciate a collaboration of any scale from your side, be it
+        monetary or in kind.</h2>
+  </div>
+  <div class="vanish">
+    <img src="./Assets/Budget.png" alt="two" class="first">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="footer">
+    <h1 style="color:pink;font-size: 30px;font-weight: 400;">Contact Us</h1>
+  </div>
+  <br>
+  <div class="child">
+    <div>
+      <h2 style="font-size: 32px;font-weight: 400;color: pink;">Angad Sharma</h2>
+      <h3 style="font-size: 22px;font-weight: 400;">Community Lead</h3>
+      <h4 style="font-size: 22px;font-weight: 400;">
+        <span>
+          <img src="" alt="" class="icon">
+        </span>
+        angadsharma1016@gmail.com
+      </h4>
+      <h4 style="font-size: 22px;font-weight: 400;">
+        <span>
+          <img src="" alt="" class="icon">
+        </span>
+        9971673330
+      </h4>
+    </div>
+    <div>
+      <h2 style="font-size: 32px;font-weight: 400;color: pink;">Meherdeep Thakur</h2>
+      <h3 style="font-size: 22px;font-weight: 400;">Management Lead</h3>
+      <h4 style="font-size: 22px;font-weight: 400;">
+        <span>
+          <img src="" alt="" class="icon">
+        </span>
+        meherdeept@gmail.com
+      </h4>
+      <h4 style="font-size: 22px;font-weight: 400;">
+        <span>
+          <img src="" alt="" class="icon">
+        </span>
+        8700865402
+      </h4>
+    </div>
+
+    <div class="finalgrid">
+      <br>
+      <div>
+        <img src="" alt="" srcset="" class="icon">
+      </div>
+      <div>
+        <a href="instagram.com/dscvitvellore" style="color: white;text-decoration: none;">
+        instagram.com/dscvitvellore</a></div>
+      <div>
+        <img src="" alt="" srcset="" class="icon">
+      </div>
+      <div>
+        <a href="mailto:dscvitvellore@gmail.com" style="color: white;text-decoration: none;">dscvitvellore@gmail.com</a>
+      </div>
+     
+      <div>
+        <img src="" alt="" srcset="" class="icon">
+      </div>
+      <div>
+        <a href="twitter.com/dscvit" style="color: white;text-decoration: none;">twitter.com/dscvit</a>
+        
+      </div>
+      <div>
+        <img src="" alt="" srcset="" class="icon">
+      </div>
+      <div>
+        <a href="fb.com/dscvitvellore" style="color: white;text-decoration: none;">fb.com/dscvitvellore</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
